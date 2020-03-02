@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+
+export(String, MULTILINE) var message
+"
+
+[node name="ActionButton" type="Button"]
+margin_right = 601.0
+margin_bottom = 266.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Press me!"
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+message = "Heya! This is the messaged you asked for, right?"

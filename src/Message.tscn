@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=1]
+
+[node name="Message" type="Label"]
+margin_right = 991.0
+margin_bottom = 3924.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "	This is a message. Hello! I hope this text acts the way I want it to!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
