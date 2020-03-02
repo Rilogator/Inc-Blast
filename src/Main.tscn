@@ -1,5 +1,138 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/LivingRoom.jpg" type="Texture" id=1]
+[ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Backdrop" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.733333 )
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 387.0
+margin_bottom = 461.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Stats"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+text = "Stats
+Strength:10
+Dexterity:10
+Intelligence:10"
+
+[node name="Events" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.733333 )
+margin_left = 439.0
+margin_top = 50.0
+margin_right = 1442.0
+margin_bottom = 777.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Events"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Events/ScrollContainer"]
+margin_right = 991.0
+margin_bottom = 3924.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 2 )
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc sem, luctus vel sagittis sit amet, venenatis vitae mi. Suspendisse urna nibh, sollicitudin id enim nec, condimentum convallis elit. Aliquam lacinia tellus purus, in vestibulum urna eleifend vel. Duis sit amet mi diam. Cras nec mattis sem. Sed eu ipsum diam. Sed hendrerit venenatis efficitur. Maecenas pellentesque pharetra imperdiet. Vestibulum sit amet ante in ligula fringilla sodales. Mauris ultrices risus quis faucibus consectetur. Donec commodo id ligula vel blandit. Maecenas sit amet velit id dui placerat porttitor et id risus. Nullam porttitor eget ante ut mattis. Quisque luctus metus non augue aliquet congue.
+
+Integer venenatis sem a lacinia lobortis. Duis lacinia eros ac felis consequat placerat in nec tellus. Proin varius tincidunt ipsum, semper ornare metus maximus eu. Suspendisse potenti. Vivamus ut dapibus est. Suspendisse feugiat nec tortor ac tempus. Aliquam diam tellus, posuere eu purus vitae, viverra auctor sapien. Donec rutrum sagittis nisl, at congue metus aliquet a. Proin id venenatis neque, ornare lacinia ligula. Etiam id quam euismod, cursus velit et, mollis elit.
+
+Ut pellentesque ultrices maximus. Etiam id tristique ex, in porttitor lacus. Sed vel odio vulputate, venenatis metus ut, scelerisque augue. Aenean eu mauris ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lorem turpis, bibendum at tempor rhoncus, tincidunt at lectus. In id dolor nec sem pretium condimentum eget at dolor. Aliquam tincidunt lectus sed urna suscipit auctor. Phasellus finibus egestas turpis, nec pretium felis tincidunt id.
+
+Phasellus semper, metus et ullamcorper feugiat, enim mauris venenatis ex, sed fermentum urna ipsum faucibus purus. Vivamus imperdiet dictum quam et congue. Nulla laoreet mi ligula. Pellentesque at tellus tempus, cursus nibh quis, semper elit. Aenean mollis arcu libero, quis ornare odio ullamcorper id. Donec vehicula sapien eget elit ultrices venenatis. Morbi ac tortor at enim porttitor gravida non venenatis tellus. Integer egestas vulputate leo sed tempus. Nam lectus velit, vulputate eget mauris eget, vehicula rhoncus enim. Aenean et nisl in lectus venenatis mollis. Fusce libero est, sollicitudin nec ipsum vel, commodo gravida quam. Phasellus non pulvinar lorem. Etiam vestibulum odio quis risus convallis, ac pulvinar massa malesuada. Morbi tincidunt pharetra massa id varius. Ut non dui dolor. Suspendisse at nisi quis eros volutpat tristique at id nulla.
+
+Ut id feugiat libero, quis pretium tortor. Phasellus ultricies luctus orci, a convallis massa commodo consectetur. Curabitur pulvinar enim id turpis condimentum, vel mattis leo commodo. Aenean et vehicula sem. Aliquam magna magna, vestibulum id consectetur et, gravida quis ante. Vivamus sagittis leo non mi vulputate, ut mollis sem luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam sodales aliquet eros, vitae viverra leo sodales faucibus. Pellentesque felis orci, malesuada eget mauris a, malesuada volutpat erat. "
+autowrap = true
+percent_visible = -0.00170068
+
+[node name="Location" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.733333 )
+margin_left = 1512.0
+margin_top = 50.0
+margin_right = 1879.0
+margin_bottom = 461.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Location"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+text = "Current Location
+House
+Time: 12:30 pm
+
+"
+
+[node name="Actions" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.733333 )
+margin_left = 75.0
+margin_top = 804.0
+margin_right = 1879.0
+margin_bottom = 1055.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Actions"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Actions/GridContainer"]
+margin_right = 448.0
+margin_bottom = 251.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button2" type="Button" parent="Actions/GridContainer"]
+margin_left = 452.0
+margin_right = 900.0
+margin_bottom = 251.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button3" type="Button" parent="Actions/GridContainer"]
+margin_left = 904.0
+margin_right = 1352.0
+margin_bottom = 251.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button4" type="Button" parent="Actions/GridContainer"]
+margin_left = 1356.0
+margin_right = 1804.0
+margin_bottom = 251.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
