@@ -1,0 +1,147 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Gaz.png" type="Texture" id=2]
+[ext_resource path="res://Assets/LivingRoom.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Untitled.png" type="Texture" id=4]
+
+[node name="Prototype3" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lewd" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 591.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Lewd"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+split_offset = 866
+dragger_visibility = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VSplitContainer"]
+margin_right = 1920.0
+margin_bottom = 866.0
+split_offset = 960
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="TextureRect" parent="VSplitContainer/HSplitContainer"]
+self_modulate = Color( 1, 1, 1, 0.784314 )
+margin_right = 960.0
+margin_bottom = 866.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VSplitContainer/HSplitContainer/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VSplitContainer/HSplitContainer/Text/ScrollContainer"]
+margin_right = 948.0
+margin_bottom = 4689.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et dignissim justo. Nullam gravida sagittis magna, sit amet egestas mi finibus eget. Nunc volutpat, elit vitae sodales mollis, mi nulla porta sapien, eu laoreet lacus dui eget magna. Donec eros neque, pellentesque sit amet sem ac, porttitor tempus velit. Praesent vulputate sem a erat iaculis, ac lacinia nisi tincidunt. Vestibulum dictum tortor et libero egestas, at ullamcorper leo iaculis. Aliquam euismod non justo malesuada condimentum. In quis varius ipsum. Integer sed imperdiet sapien, vitae volutpat ligula. Integer cursus leo ipsum, id feugiat purus laoreet nec. Proin pharetra ipsum eget dui accumsan vestibulum. Maecenas molestie non sem at cursus. Nullam non justo tempor erat dictum lacinia sed facilisis ex.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper, nulla at congue pellentesque, purus mi tempus felis, in semper nisl felis quis nulla. Morbi eget dignissim magna. Morbi dui lorem, blandit sed dapibus eu, vulputate lacinia lectus. Aenean nulla nibh, facilisis in ex fringilla, rutrum semper magna. Nulla iaculis tortor suscipit ex blandit, ac commodo nunc lobortis. Mauris eleifend magna vel sem tempor, eu congue mi porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi maximus, augue non dignissim dictum, diam metus fermentum velit, sit amet tempor tellus libero id arcu.
+
+Sed euismod elit malesuada nisl condimentum, quis lacinia lectus tristique. Aenean tristique lorem nec odio volutpat, non feugiat arcu venenatis. Aliquam eget nunc lobortis, venenatis risus non, volutpat dolor. Integer nec lorem ullamcorper, ullamcorper justo ac, volutpat nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vel finibus quam. Aenean vehicula mi eu cursus egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Sed pellentesque pharetra est, sed finibus est condimentum et. Nunc fermentum mi nec risus congue, id lacinia diam tempor. Duis at vehicula tortor, ultrices iaculis enim. Maecenas turpis tellus, ultrices in finibus non, tincidunt in metus. Sed luctus, velit a rhoncus ornare, sapien enim facilisis lectus, eu malesuada dolor justo eu nulla. Nullam nec dignissim arcu. Mauris id tincidunt odio, eget varius dolor. Nullam posuere egestas vehicula. Donec lobortis tincidunt scelerisque. Etiam ut dui in lacus bibendum ultrices ac nec tellus. Sed tincidunt, justo eget mollis auctor, eros nibh aliquam justo, nec lacinia ipsum tortor ut sem. Donec rhoncus sem pellentesque nisi elementum semper. Nunc volutpat lacinia neque nec ultricies. Vestibulum non consectetur nisl, nec imperdiet felis. Nam gravida ultricies turpis, vel porta ante luctus sed.
+
+Nam ac turpis sit amet tellus volutpat pharetra eget non dolor. Maecenas iaculis vel nibh eget suscipit. In elit elit, luctus in risus sit amet, posuere imperdiet lectus. Suspendisse laoreet, nisl ut rutrum pulvinar, dolor ipsum dictum nulla, a lacinia dolor est ut mauris. Donec quis porttitor arcu. Praesent mattis ornare ante, id lacinia tortor laoreet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt consectetur ipsum, congue pulvinar risus congue cursus. Fusce vitae nisi congue, iaculis leo eget, tempus eros. Vestibulum ut tincidunt felis, sit amet sollicitudin libero. Sed finibus tempor viverra. In hac habitasse platea dictumst. Ut hendrerit aliquam lectus, vel placerat dolor interdum gravida. Mauris et mauris quis ligula egestas sodales. Morbi id elementum nibh. "
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="VSplitContainer/HSplitContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 972.0
+margin_right = 1920.0
+margin_bottom = 866.0
+
+[node name="Actions" type="Panel" parent="VSplitContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 878.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="VSplitContainer/Actions"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VSplitContainer/Actions/CenterContainer"]
+margin_left = 343.0
+margin_top = 74.0
+margin_right = 1577.0
+margin_bottom = 128.0
+
+[node name="Button" type="Button" parent="VSplitContainer/Actions/CenterContainer/HBoxContainer"]
+margin_right = 432.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "That's a lot of nuts!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="VSplitContainer/Actions/CenterContainer/HBoxContainer"]
+margin_left = 436.0
+margin_right = 755.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "Leap that wall"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="VSplitContainer/Actions/CenterContainer/HBoxContainer"]
+margin_left = 759.0
+margin_right = 1234.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "Your shoes are black!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
