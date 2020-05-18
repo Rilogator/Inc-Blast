@@ -1,4 +1,4 @@
-# warning-ignore-all:shadowed_variable
+# warning-ignore-all:unused_class_variable
 # ############################################################################ #
 # Copyright © 2015-present inkle Ltd.
 # Copyright © 2019-present Frédéric Maquin <fred@ephread.com>
@@ -8,11 +8,18 @@
 # inkgd is licensed under the terms of the MIT license.
 # ############################################################################ #
 
-extends Reference
+# Simple replacement of the StringWriter class from the .NET Framework.
+# It has none of the optimisations of original class and merely wraps
+# a plain old string.
 
-var exists = false # Bool
-var result = null # Variant
+var internal_string
 
-func _init(exists, result):
-    self.exists = exists
-    self.result = result
+func _init():
+    internal_string = ""
+
+func write(s):
+
+    internal_string += str(s)
+
+func to_string():
+    return internal_string

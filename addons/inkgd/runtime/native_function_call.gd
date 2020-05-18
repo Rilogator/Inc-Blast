@@ -1,3 +1,5 @@
+# warning-ignore-all:shadowed_variable
+# warning-ignore-all:unused_class_variable
 # ############################################################################ #
 # Copyright © 2015-present inkle Ltd.
 # Copyright © 2019-present Frédéric Maquin <fred@ephread.com>
@@ -146,8 +148,8 @@ func call_binary_list_operation(parameters):
 
 # (Array<InkObject>) -> Value
 func call_list_increment_operation(list_int_params):
-    var list_val = Utils.casts(list_int_params[0], "ListValue")
-    var int_val = Utils.casts(list_int_params [1], "IntValue")
+    var list_val = Utils.cast(list_int_params[0], "ListValue")
+    var int_val = Utils.cast(list_int_params [1], "IntValue")
 
     var result_raw_list = InkList.new()
 
