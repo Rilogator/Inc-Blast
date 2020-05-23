@@ -40,6 +40,8 @@ var story
 var _current_choice_container
 var _loading_thread
 
+var _path_to_story = "res://examples/ink/the_intercept.ink.json"
+
 # ############################################################################ #
 # Lifecycle
 # ############################################################################ #
@@ -59,9 +61,9 @@ func start_story():
 
 	if SHOULD_LOAD_IN_BACKGROUND:
 		_loading_thread = Thread.new()
-		_loading_thread.start(self, "_async_load_story", "res://examples/ink/the_intercept.ink.json")
+		_loading_thread.start(self, "_async_load_story", _path_to_story)
 	else:
-		_load_story("res://examples/ink/the_intercept.ink.json")
+		_load_story(_path_to_story)
 		_bind_externals()
 		continue_story()
 		_remove_loading_overlay()
