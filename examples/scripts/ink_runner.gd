@@ -33,6 +33,9 @@ onready var LoadingAnimationPlayer = get_node("LoadingAnimationPlayer")
 
 var story
 
+export(String, "The Intercept", "Quarantine Fever") var my_story
+
+
 # ############################################################################ #
 # Private Properties
 # ############################################################################ #
@@ -40,13 +43,18 @@ var story
 var _current_choice_container
 var _loading_thread
 
-var _path_to_story = "res://examples/ink/the_intercept.ink.json"
+var _story_dict := {"The Intercept":"res://examples/ink/the_intercept.ink.json",
+					"Quarantine Fever":"res://Assets/ink/quarantinefever.ink.json"}
+
+var _story_path : String
+
 
 # ############################################################################ #
 # Lifecycle
 # ############################################################################ #
 
 func _ready():
+	_story_path = _story_dict[my_story]
 	call_deferred("start_story")
 
 func _exit_tree():
@@ -61,9 +69,9 @@ func start_story():
 
 	if SHOULD_LOAD_IN_BACKGROUND:
 		_loading_thread = Thread.new()
-		_loading_thread.start(self, "_async_load_story", _path_to_story)
+		_loading_thread.start(self, "_async_load_story", _story_path)
 	else:
-		_load_story(_path_to_story)
+		_load_story(_story_path)
 		_bind_externals()
 		continue_story()
 		_remove_loading_overlay()
