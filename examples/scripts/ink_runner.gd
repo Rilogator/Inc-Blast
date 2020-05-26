@@ -24,7 +24,7 @@ var LineLabel = load("res://examples/scenes/label.tscn");
 # Node
 # ############################################################################ #
 
-onready var StoryMarginContainer = get_node("StoryMarginContainer")
+onready var StoryMarginContainer = get_node("VSplitContainer")
 onready var StoryScrollContainer = StoryMarginContainer.get_node("StoryScrollContainer")
 onready var StoryVBoxContainer = StoryScrollContainer.get_node("StoryVBoxContainer")
 onready var LoadingAnimationPlayer = get_node("LoadingAnimationPlayer")
@@ -98,7 +98,7 @@ func continue_story():
 
 	if story.current_choices.size() > 0:
 		_current_choice_container = ChoiceContainer.instance()
-		StoryVBoxContainer.add_child(_current_choice_container)
+		$VSplitContainer.add_child(_current_choice_container)
 
 		_current_choice_container.create_choices(story.current_choices)
 		_current_choice_container.connect("choice_selected", self, "_choice_selected")
@@ -125,7 +125,7 @@ func _observe_variables(variable_name, new_value):
 	print(str("Variable '", variable_name, "' changed to: ", new_value))
 
 func _choice_selected(index):
-	StoryVBoxContainer.remove_child(_current_choice_container)
+	$VSplitContainer.remove_child(_current_choice_container)
 	_current_choice_container.queue_free()
 
 	story.choose_choice_index(index)

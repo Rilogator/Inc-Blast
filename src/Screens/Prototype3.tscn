@@ -84,9 +84,8 @@ __meta__ = {
 
 [node name="TextureRect" type="TextureRect" parent="Lewd/CenterContainer"]
 margin_left = 134.0
-margin_top = 690.0
 margin_right = 934.0
-margin_bottom = 1770.0
+margin_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 800, 1080 )

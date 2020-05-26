@@ -53,30 +53,18 @@ __meta__ = {
 }
 my_story = "Quarantine Fever"
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.113725, 0.121569, 0.129412, 1 )
+split_offset = 900
+dragger_visibility = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StoryMarginContainer" type="MarginContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_constants/margin_right = 250
-custom_constants/margin_top = 40
-custom_constants/margin_left = 250
-custom_constants/margin_bottom = 40
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="StoryScrollContainer" type="ScrollContainer" parent="StoryMarginContainer"]
-margin_left = 250.0
-margin_top = 40.0
-margin_right = 1670.0
-margin_bottom = 1040.0
+[node name="StoryScrollContainer" type="ScrollContainer" parent="VSplitContainer"]
+margin_right = 1920.0
+margin_bottom = 1080.0
 grow_horizontal = 2
 theme = SubResource( 6 )
 scroll_horizontal_enabled = false
@@ -84,8 +72,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StoryVBoxContainer" type="VBoxContainer" parent="StoryMarginContainer/StoryScrollContainer"]
-margin_right = 1420.0
+[node name="StoryVBoxContainer" type="VBoxContainer" parent="VSplitContainer/StoryScrollContainer"]
+margin_right = 1920.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 custom_constants/separation = 20

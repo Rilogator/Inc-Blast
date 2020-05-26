@@ -8,6 +8,15 @@ anchor_bottom = 1.0
 custom_constants/margin_right = 150
 custom_constants/margin_left = 150
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 150.0
+margin_right = 1770.0
+margin_bottom = 1080.0
+color = Color( 0.223529, 0.243137, 0.27451, 1 )
 
 [node name="ChoiceVBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 150.0
