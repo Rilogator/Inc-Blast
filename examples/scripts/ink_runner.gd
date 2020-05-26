@@ -78,6 +78,10 @@ func start_story():
 
 func continue_story():
 	while story.can_continue:
+		if story.current_tags.has("CLEAR"): #CLEAR text before continuing
+			for i in range(0, StoryVBoxContainer.get_child_count()):
+				StoryVBoxContainer.get_child(i).queue_free()
+		
 		var text = story.continue()
 	
 		var label = LineLabel.instance()
