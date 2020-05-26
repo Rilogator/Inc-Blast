@@ -30,7 +30,7 @@ The following story contains sexual acts between two consenting adults. If your 
 
 The "Racoon Virus" quarantine has my sister going through a bit of cabin fever. Mom was out on a business trip and isolated in a hotel somewhere. Must be nice. {sisterName} can be a homebody at times, but if there’s anything she hates most, it’s being told what to do. 
 
-* My sister. ->part2 #IMAGE: images/sis_intro.png
+* My sister. ->part2 #IMAGE: sis_intro.png
 
 = part2
 
@@ -44,7 +44,7 @@ It’s not all bad though. I realized quickly I needed an excuse to get out of t
  
 When did she become so dependent, anyhow? Not to mention ungrateful.
 
-* [Jogging.] ->part3 #IMAGE: images/player_intro.png
+* [Jogging.] ->part3 #IMAGE: player_intro.png
 
 = part3
 So I started hitting the park with a morning jog, one of the few “approved” methods of exercise that abides social distancing.
@@ -120,7 +120,7 @@ I decide to do some work in the kitchen. Might as well try to acclimate being ar
     
     - Major progress today. The system boots to desktop but its a bit sluggish and still crashes intermittently. {sisterName} really did a number on it. Still needs some more tests and fresh install but otherwise should be good to go soon. Go in a drawer until I need it for work. The day goes by without much event. {sisterName} wakes up and I can hear her moving around the house. Seems like she sticks to a routine, too. As I'm screwing the plastic battery cover back on the laptop. My door opens with sister in tow. 
     
-    "Hey, nerd. How is it?" she asks. #IMAGE: images/sis_bully.png
+    "Hey, nerd. How is it?" she asks. #IMAGE: sis_bully.png
     
     "Almost back to spec." I'm not really mad at her anymore. Mostly.
     
@@ -130,7 +130,7 @@ I decide to do some work in the kitchen. Might as well try to acclimate being ar
     
     "I guess. I just don't you guys doing stuff for me all the time." I cant help but laugh.
     
-    "Oh give me a break." #IMAGE: images/sis_bully2.png
+    "Oh give me a break." #IMAGE: sis_bully2.png
     
     "I'm being serious here." Her expression softens a bit.
     
@@ -140,7 +140,7 @@ I decide to do some work in the kitchen. Might as well try to acclimate being ar
     
     "Yeah all right. What's the matter you think just because you got a big dick, you're the big man of the house?"
     
-    #IMAGE: images/sis_grope.png
+    #IMAGE: sis_grope.png
     
     "Hey! What do you think you're doing?," I call out before spinning my chair back around. She laughs her haughty laugh again and I know things are back to normal. 
     
@@ -155,7 +155,7 @@ I decide to do some work in the kitchen. Might as well try to acclimate being ar
 
 === jogging
 TODO: Add more introspection scenes here.
-Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most of my job, but when it comes to a run, it's not so bad. Time away from the house is refreshing. No need for a mask when the streets are so empty, though it might change when things get warmer. I come home tired and worn but in a good way. #IMAGE: images/player_intro.png
+Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most of my job, but when it comes to a run, it's not so bad. Time away from the house is refreshing. No need for a mask when the streets are so empty, though it might change when things get warmer. I come home tired and worn but in a good way. #IMAGE: player_intro.png
 
 //Stress reduced by 3!
 //{ stress < 4:
@@ -187,7 +187,7 @@ Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most 
 { stopping:
     - I'm not really sure what Mom expects us to talk about. It would be pretty weird for both of us if I just started asking about her day. Not like much is happening anyway. Might as well start with something simple. I take my laptop out into the kitchen to work. Usually, it's reserved for the rare times I have to do on-site work but it will do fine here. {sisterName} hasn't woken up yet so I get to have at least a few hours to work in semi-solitude. Coffee and toast in hand, I head to task.
     
-        "What are you doin' out here?" #IMAGE: images/sis_bully.png
+        "What are you doin' out here?" #IMAGE: sis_bully.png
         
         {sisterName} surprised me. I notice that it's already afternoon. Work really does occupy me. After glancing at the clock I answer her, "Just working. Figured I'd make the most of the house, stuck as we are." An accurate enough lie.
         
@@ -195,7 +195,7 @@ Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most 
         
         I raise my eyebrow. "It's my house too, {sisterName}, I can work here if I want to."
         
-        "Gawd, you're such a loser {playerName}." #IMAGE: images/sis_bully2.png
+        "Gawd, you're such a loser {playerName}." #IMAGE: sis_bully2.png
         
         "Always been a weirdo who can't tell when people don't want him around."
         
@@ -207,7 +207,7 @@ Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most 
         
         Stored away until it's needed. I wonder if that's how {sisterName} sees me.
         
-        "Hey, loser." #IMAGE: images/sis_bully.png
+        "Hey, loser." #IMAGE: sis_bully.png
         
         "Hey", I call back. My fingers don't stop typing. "There's some toast there if you want it."
         
@@ -238,7 +238,7 @@ Ragged shoes and old track shorts. Repetition is part of my job. Hell, its most 
     
     Screw it. I throw the shirt I slept in with the rest and  head to my makeshift workstation. Not like there's anyone around to see my lack of modesty. I almost forget about it too, until {sisterName} steps out of her room.
     
-    "Ew, why are you naked in the kitchen?" #IMAGE: images/sis_bully.png
+    "Ew, why are you naked in the kitchen?" #IMAGE: sis_bully.png
     
     "Huh? Oh, yeah. Out of shirts." I would think a simple explanation would do, but she keeps staring. "Um, is it a problem?"
     
@@ -317,7 +317,7 @@ She took it as a sign of weakness. "It's okay you don't have to say it," she sai
 
 As if to confirm my inner thoughts, {sisterName} grabs the bottom her shirt and makes good on her end of the "deal".
 
-* [Continue.] ->part2 # IMAGE: images/sis_flash.png
+* [Continue.] ->part2 # IMAGE: sis_flash.png
 TODO: Find a better method of adding "stops" to the story.
 =part2
 Her tits slide out of her loose fitting top almost reluctantly their owner's enthusiasm. Once fully released, they take a moment to completely settle, first colliding with eachother with a pendulus "plap". Rudely ejected from their home, they lazily bounce in all directions. Her nipples hypnotically dance atop her massive mounds until they come to rest, jutting toward me either with invitation or accusation. The faintest bit of sweat rolls off the peak of one her nipples before falling away and being forgotten.
@@ -326,7 +326,7 @@ Half a gasp gets caught in my throat. Somehow her smirk gets a little wider, and
 
 
 
-* [Retaliate.] ->part3 # IMAGE: images/player_flash.png
+* [Retaliate.] ->part3 # IMAGE: player_flash.png
 
 =part3
 Mid sentence I pull my track shorts down. They had an internal lining so I wasn't wearing any underwear either. "Now that I've shown you my dick, are you gonna lay off and give me some peace of mind? Well, are you!?"
@@ -346,7 +346,7 @@ After a few days, the encounter drifts from my mind. I think after what happened
 
 I do find myself heading over there to get a snack, though. As a grab a juice from the fridge, I see the computer left on the counter. Would be nice if {sisterName} handed it to me in person but I guess that's asking too much. I power it on to log it out of the user session and...
 
-boot error. # IMAGE: images/boot_error.png
+boot error. # IMAGE: boot_error.png
 
 Usual diagnostic brings up much of the same. After all that, he actually broke my work station. Instinctively I look over to the living, but she wasn't there today. It's suspiciously clean too, as if she's just been in her room all day. No wonder.
 
@@ -362,7 +362,7 @@ I round on my heels and storm over to her room. I don't bother to knock and flin
 
 "I'm not putting up with this. Don't ask me for anything again." I turn around and leave just as quickly as I came in.
 
-"Yeah and why would I, computer geek!" #IMAGE: images/sis_bully2.png
+"Yeah and why would I, computer geek!" #IMAGE: sis_bully2.png
 
 I hear the door slam behind me and retrieve the laptop before heading into my room. Replacement parts are going to be hard to find during quarantine and electronic shipments are all being delayed. I can fix it, but it's going to be a headache. Thankfully all my work is backed up, though I don't like having my things being broken. Fine then. Something to do while I keep to myself. Should never have tried this "bonding time" nonsense in the first place.
 
@@ -373,7 +373,7 @@ Work station is as good as new. I did end up having to open it up, but just to g
 
 {sisterName} comes in and offers me a glass of water. She wants something. 
 
-"Hey." #IMAGE: images/sis_bully.png
+"Hey." #IMAGE: sis_bully.png
 
 "{sisterName} I know you wanna ask me something, so just come out with it."
 
@@ -393,7 +393,7 @@ She pouts. "Come oooon. I won't break it again and if I'm having trouble I'll ju
 
 "Come off it, {sisterName}."
 
-Before I can turn around, she pounces yet again.  # IMAGE: images/sis_grope.png
+Before I can turn around, she pounces yet again.  # IMAGE: sis_grope.png
 
 "Or how about I get you off?", she purrs. This time she rubs my junk more thoroughly, not satisfied with a playful rub. I want to protest but I hesitate. She strokes the top of my shaft, then prods the sides of it inquisitively. Her hands slide downward to cradle my sack tenderly, as if weighing their heft. She gives a satifactory hum.
 
@@ -403,7 +403,7 @@ She gives a look of feinged surprise. "What's that, little bro?"
 
 "Whatever, if it makes you shut up."
 
-Even as I stare at the wall, I can tell how excited she is to get her way. She always does. Her hand gives one last healthy squeeze before helping the other pull my shorts down past the seat of my chair. It's a practiced nimbleness that fishes my half hard penis from my boxers.  #IMAGE: images/sis_hj.png
+Even as I stare at the wall, I can tell how excited she is to get her way. She always does. Her hand gives one last healthy squeeze before helping the other pull my shorts down past the seat of my chair. It's a practiced nimbleness that fishes my half hard penis from my boxers.  #IMAGE: sis_hj.png
 
 {sisterName} makes an excited sound and I stare holes into the wall. I can't believe I'm letting her do this. My trepidation begins to break apart when her hands grab the base of my cock. I never had cause in the past to describe my sister as methodical but that soon changes. She gives me a single stroke to appreciate my length. My hips give a little jump and she excitedly comments, "Hah. I'd bet my nail polish no other chick's ever wrangled this monster." 
 
@@ -419,13 +419,13 @@ She pulled her hand down quickly, and slowed it down as she brought it back up t
 
 I found myself looking up toward the ceiling, this time without really meaning to. My sister tugged all inhibition out of me and I let out a moan of pleasure. My legs went slack, allowing {sisterName} to prop her arm on my thigh. She sensed it before I did, but I was reaching my peak and she wanted me to careen off the edge. With the added leverage, she rapidly whipped her fist up and down my cock. I gripped the arms of my desk chair and flexed all of my muscles in turn. I looked downward from my delerium. Her hand was a blur and here eyes shine ferociously. She was so closely fixated. Out of nowhere, she started slapping my cock against the side of her face. She stared me right into my eyes as she did it, before returning to the rapid jerking.
 
-* "Come on, computer geek, give your big sister a big load." #IMAGE: images/sis_hj2.png
+* "Come on, computer geek, give your big sister a big load." #IMAGE: sis_hj2.png
 
 My eyes cross themselves as I'm about to cum. Like a dancer returning to starting position, {sisterName} clasps her hands around the base of my shaft and pulls upward, coaxing out everything she can. 
 
 I lean fully into the back of my hair as my hips just forward spraying cum into the air. {sisterName} looks enchanted with the display, like someone admiring a dancing water fountain. Even so, her hands still don't stop moving. I feel her thumb moving in those mysterious shapes as her palm and other fingers keep jerking upward. The first spirt unceremoniously lands on her face. She doesn't even seem to notice. The second and third smaller spurts land nowhere near the first, spraying across her bare cleavage. Through it all, she never stops staring at my dick, appraising it for some unknown quality.
 
- #IMAGE: images/sis_hj3.png
+ #IMAGE: sis_hj3.png
 
 She holds onto my twitching cock after its done. "Wow," she exclaims under her breath. My eyes find their place back in my skull and I focus on her excited, cum covered face. Like someone who had just seen the circus for the first time, but covered in cum. 
 

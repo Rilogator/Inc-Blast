@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Assets/Gaz.png" type="Texture" id=2]
-[ext_resource path="res://Assets/LivingRoom.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/images/player_intro.png" type="Texture" id=2]
 [ext_resource path="res://examples/scenes/ink_runner.tscn" type="PackedScene" id=4]
 
 [sub_resource type="GDScript" id=1]
@@ -13,6 +12,7 @@ script/source = "extends Control
 # ############################################################################ #
 
 onready var InkRunner = get_node(\"VSplitContainer/HSplitContainer/InkRunner\")
+onready var LewdShower = get_node(\"Lewd/CenterContainer/TextureRect\")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,13 +28,19 @@ func _on_InkRunner_tags_received(tags: Array):
 		match components[0]:
 			\"IMAGE\": show_image(components[1])
 			
+			\"CLEAR\": LewdShower.texture = null
+			
 			_: print(\"Tag not recognized: \" + components[0])
 	pass
 
 ################## Tag Functions 
 
 func show_image(image : String):
-	print(\"If I could, I'd show the following image: \" + image)
+	var path_to_image : String
+	
+	path_to_image = \"res://Assets/images/\" + image
+	
+	LewdShower.texture = load(path_to_image)
 	pass
 "
 
@@ -49,7 +55,6 @@ __meta__ = {
 [node name="Background" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -58,17 +63,36 @@ __meta__ = {
 self_modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 591.0
+margin_left = 671.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="Lewd"]
+[node name="CenterContainer" type="CenterContainer" parent="Lewd"]
+anchor_left = 1.0
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -1069.0
+margin_top = -1080.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_clip_content = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Lewd/CenterContainer"]
+margin_left = 134.0
+margin_top = 690.0
+margin_right = 934.0
+margin_bottom = 1770.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 800, 1080 )
 texture = ExtResource( 2 )
 expand = true
-stretch_mode = 7
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
