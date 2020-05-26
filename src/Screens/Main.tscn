@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assets/images/player_intro.png" type="Texture" id=2]
 [ext_resource path="res://examples/scenes/ink_runner.tscn" type="PackedScene" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 
@@ -94,7 +93,6 @@ margin_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 800, 1080 )
-texture = ExtResource( 2 )
 expand = true
 stretch_mode = 6
 __meta__ = {
