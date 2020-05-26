@@ -19,9 +19,23 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _on_InkRunner_tags_received(tags):
-	print(\"Prototype3 received the following tags: \")
-	print(tags)
+func _on_InkRunner_tags_received(tags: Array):
+	#var tag_data := []
+	
+	for tag in tags:
+		var components = tag.split(\": \")
+		
+		match components[0]:
+			\"IMAGE\": show_image(components[1])
+			
+			_: print(\"Tag not recognized: \" + components[0])
+	pass
+
+################## Tag Functions 
+
+func show_image(image : String):
+	print(\"If I could, I'd show the following image: \" + image)
+	pass
 "
 
 [node name="Prototype3" type="Control"]
