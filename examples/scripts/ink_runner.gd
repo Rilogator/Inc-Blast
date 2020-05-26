@@ -79,11 +79,13 @@ func start_story():
 func continue_story():
 	while story.can_continue:
 		var text = story.continue()
-
+	
 		var label = LineLabel.instance()
 		label.text = text
-
+		
 		StoryVBoxContainer.add_child(label)
+		
+		print(story.current_tags)
 
 	if story.current_choices.size() > 0:
 		_current_choice_container = ChoiceContainer.instance()
@@ -99,6 +101,8 @@ func continue_story():
 #			print("Took the tea.")
 #		else:
 #			print("Didn't take the tea.")
+
+
 
 # ############################################################################ #
 # Private Methods
