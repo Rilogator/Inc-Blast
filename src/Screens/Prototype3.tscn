@@ -1,13 +1,33 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/default_font_48.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Assets/Gaz.png" type="Texture" id=2]
 [ext_resource path="res://Assets/LivingRoom.jpg" type="Texture" id=3]
 [ext_resource path="res://examples/scenes/ink_runner.tscn" type="PackedScene" id=4]
 
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+# ############################################################################ #
+# Node
+# ############################################################################ #
+
+onready var InkRunner = get_node(\"VSplitContainer/HSplitContainer/InkRunner\")
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+func _on_InkRunner_tags_received(tags):
+	print(\"Prototype3 received the following tags: \")
+	print(tags)
+"
+
 [node name="Prototype3" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -118,3 +138,4 @@ text = "Your shoes are black!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="tags_received" from="VSplitContainer/HSplitContainer/InkRunner" to="." method="_on_InkRunner_tags_received"]

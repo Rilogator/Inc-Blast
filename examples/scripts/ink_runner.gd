@@ -8,6 +8,8 @@ extends Node
 
 const SHOULD_LOAD_IN_BACKGROUND = true
 
+signal tags_received(tags)
+
 # ############################################################################ #
 # Imports
 # ############################################################################ #
@@ -89,7 +91,9 @@ func continue_story():
 		
 		StoryVBoxContainer.add_child(label)
 		
-		print(story.current_tags)
+		if !story.current_tags.empty():
+			print(story.current_tags)
+			emit_signal("tags_received", story.current_tags)
 
 	if story.current_choices.size() > 0:
 		_current_choice_container = ChoiceContainer.instance()
