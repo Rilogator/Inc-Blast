@@ -5,15 +5,15 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Label
 
-
-const FADETIME := 1.0
-
-func _ready():
-	visible_characters = 0
-
-func _process(delta):
-	if visible_characters < text.length():
-		visible_characters += 4
+#
+#const FADETIME := 1.0
+#
+#func _ready():
+#	visible_characters = 0
+#
+#func _process(delta):
+#	if visible_characters < text.length():
+#		visible_characters += 4
 "
 
 [node name="Label" type="Label"]

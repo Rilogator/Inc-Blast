@@ -17,7 +17,7 @@ onready var LewdShower = get_node(\"HSplitContainer/ViewPort/Portrait\")
 # Image Markers
 # ############################################################################ #
 
-var image_markers : PoolIntArray = []
+var marker_dict := {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,23 +36,25 @@ func _on_InkRunner_tags_received(tags: Array, tagged_label: Label):
 		var components = tag.split(\": \")
 		
 		match components[0]:
-			\"IMAGE\": show_image(components[1], tagged_label.get_global_transform())
+			\"IMAGE\": show_image(components[1], tagged_label)
 			
-			\"CLEAR\": LewdShower.texture = null
+			\"CLEAR\": clear()
 			
 			_: print(\"Tag not recognized: \" + components[0])
 	pass
 
 ################## Tag Functions 
 
-func show_image(image : String, position):
+func clear() ->void :
+	LewdShower.texture = null
+	marker_dict = {}
+
+func show_image(image : String, label : Label):
+	var new_marker = Position2D.new()
+	label.add_child(new_marker)
 	
-	#Store image positions
-	#image_markers.append(position)
-	#Compare rect position to screen space
-	#Update on input
-	#if rect position is centered: show image
-	
+	marker_dict[new_marker] = image
+
 	LewdShower.texture = load(\"res://Assets/images/\" + image)
 	pass
 "
