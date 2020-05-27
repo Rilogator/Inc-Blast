@@ -4,7 +4,7 @@
 # See LICENSE in the project root for license information.
 # ############################################################################ #
 
-extends MarginContainer
+extends Control
 
 # ############################################################################ #
 # Imports
@@ -16,7 +16,7 @@ var ChoiceButton = load("res://examples/scenes/button.tscn")
 # Nodes
 # ############################################################################ #
 
-onready var ChoiceVBoxContainer = get_node("ChoiceVBoxContainer")
+onready var ChoiceVBoxContainer = get_node("Background/ChoiceVBoxContainer")
 
 # ############################################################################ #
 # Signal
