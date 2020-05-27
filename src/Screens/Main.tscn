@@ -13,19 +13,30 @@ script/source = "extends Control
 onready var InkRunner = get_node(\"HSplitContainer/InkRunner\")
 onready var LewdShower = get_node(\"HSplitContainer/ViewPort/Portrait\")
 
+# ############################################################################ #
+# Image Markers
+# ############################################################################ #
+
+var image_markers : PoolIntArray = []
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
+# warning-ignore:unused_argument
+func _process(delta):
+	#Update image tag positions
+	
+	pass
 
-func _on_InkRunner_tags_received(tags: Array):
+func _on_InkRunner_tags_received(tags: Array, tagged_label: Label):
 	#var tag_data := []
 	
 	for tag in tags:
 		var components = tag.split(\": \")
 		
 		match components[0]:
-			\"IMAGE\": show_image(components[1])
+			\"IMAGE\": show_image(components[1], tagged_label.get_global_transform())
 			
 			\"CLEAR\": LewdShower.texture = null
 			
@@ -34,12 +45,15 @@ func _on_InkRunner_tags_received(tags: Array):
 
 ################## Tag Functions 
 
-func show_image(image : String):
-	var path_to_image : String
+func show_image(image : String, position):
 	
-	path_to_image = \"res://Assets/images/\" + image
+	#Store image positions
+	#image_markers.append(position)
+	#Compare rect position to screen space
+	#Update on input
+	#if rect position is centered: show image
 	
-	LewdShower.texture = load(path_to_image)
+	LewdShower.texture = load(\"res://Assets/images/\" + image)
 	pass
 "
 

@@ -87,14 +87,19 @@ func continue_story():
 		
 		var text = story.continue()
 	
-		var label = LineLabel.instance()
+		var label : Label = LineLabel.instance()
 		label.text = text
 		
 		StoryVBoxContainer.add_child(label)
 		
+		
+		#Color change method, not needed.
+		#if story.current_tags.has("GREEN"): 
+		#	label.add_color_override("font_color", Color.green)
+		
 		if !story.current_tags.empty():
 			print(story.current_tags)
-			emit_signal("tags_received", story.current_tags)
+			emit_signal("tags_received", story.current_tags, label)
 
 	if story.current_choices.size() > 0:
 		_current_choice_container = ChoiceContainer.instance()

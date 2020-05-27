@@ -21,7 +21,7 @@ VAR affection = 0
 
 -> disclaimer
 === disclaimer ===
-The following story contains sexual acts between two consenting adults. If your age prohibits you from viewing this content, this game is not for you. Pressing "Continue" means you acknowledge this message. 
+The following story contains sexual acts between two consenting adults. If your age prohibits you from viewing this content, this game is not for you. Pressing "Continue" means you acknowledge this message. #GREEN
 
 * [Continue] -> intro
 
