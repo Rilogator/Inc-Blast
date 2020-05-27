@@ -25,7 +25,13 @@ func _ready():
 
 # warning-ignore:unused_argument
 func _process(delta):
-	#Update image tag positions
+	
+	for marker in marker_dict:
+		if marker.get_global_transform().origin.y < 400:
+			LewdShower.texture = load(\"res://Assets/images/\" + marker_dict[marker])
+			#break
+		else:
+			continue
 	
 	pass
 
@@ -55,8 +61,6 @@ func show_image(image : String, label : Label):
 	
 	marker_dict[new_marker] = image
 
-	LewdShower.texture = load(\"res://Assets/images/\" + image)
-	pass
 "
 
 [node name="Main" type="Control"]
