@@ -26,14 +26,13 @@ func _ready():
 # warning-ignore:unused_argument
 func _process(delta):
 	
+	# This uses more memory than necessary.
 	for marker in marker_dict:
-		if marker.get_global_transform().origin.y < 400:
-			LewdShower.texture = load(\"res://Assets/images/\" + marker_dict[marker])
-			#break
+		if (marker.get_global_transform().origin.y < 500) and LewdShower.texture != marker_dict[marker]:
+			LewdShower.texture = marker_dict[marker]
 		else:
 			continue
-	
-	pass
+
 
 func _on_InkRunner_tags_received(tags: Array, tagged_label: Label):
 	#var tag_data := []
@@ -56,10 +55,12 @@ func clear() ->void :
 	marker_dict = {}
 
 func show_image(image : String, label : Label):
+	var desired_file = load(\"res://Assets/images/\" + image)
+	
 	var new_marker = Position2D.new()
 	label.add_child(new_marker)
 	
-	marker_dict[new_marker] = image
+	marker_dict[new_marker] = desired_file
 
 "
 
