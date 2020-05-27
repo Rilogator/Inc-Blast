@@ -26,7 +26,6 @@ func _ready():
 # warning-ignore:unused_argument
 func _process(delta):
 	
-	# This uses more memory than necessary.
 	for marker in marker_dict:
 		if (marker.get_global_transform().origin.y < 500) and LewdShower.texture != marker_dict[marker]:
 			LewdShower.texture = marker_dict[marker]
