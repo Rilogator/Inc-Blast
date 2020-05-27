@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://examples/fonts/Vollkorn-Regular.tres" type="DynamicFont" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Label
+
+
+const FADETIME := 1.0
+
+func _ready():
+	visible_characters = 0
+
+func _process(delta):
+	if visible_characters < text.length():
+		visible_characters += 4
+"
 
 [node name="Label" type="Label"]
 margin_top = 1.94104
@@ -11,6 +25,7 @@ custom_colors/font_color = Color( 0.533333, 0.533333, 0.533333, 1 )
 text = "Label"
 align = 1
 autowrap = true
+script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
