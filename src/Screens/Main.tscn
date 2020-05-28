@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://src/Screens/SaveLoader.tscn" type="PackedScene" id=1]
 [ext_resource path="res://examples/scenes/ink_runner.tscn" type="PackedScene" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
 
@@ -61,6 +62,10 @@ func show_image(image : String, label : Label):
 	
 	marker_dict[new_marker] = desired_file
 
+
+
+func _on_SaveLoader_input_load():
+	clear()
 "
 
 [node name="Main" type="Control"]
@@ -118,4 +123,13 @@ stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SaveLoader" parent="." instance=ExtResource( 1 )]
+margin_left = 1655.0
+margin_top = 18.0
+margin_right = -7.0
+margin_bottom = -971.0
 [connection signal="tags_received" from="HSplitContainer/InkRunner" to="." method="_on_InkRunner_tags_received"]
+[connection signal="input_load" from="SaveLoader" to="HSplitContainer/InkRunner" method="_on_SaveLoader_input_load"]
+[connection signal="input_load" from="SaveLoader" to="." method="_on_SaveLoader_input_load"]
+[connection signal="input_save" from="SaveLoader" to="HSplitContainer/InkRunner" method="_on_SaveLoader_input_save"]

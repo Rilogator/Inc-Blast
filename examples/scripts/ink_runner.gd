@@ -81,9 +81,7 @@ func start_story():
 func continue_story():
 	while story.can_continue:
 		if story.current_tags.has("CLEAR"): #CLEAR text before continuing
-			for i in range(0, StoryVBoxContainer.get_child_count()):
-				StoryVBoxContainer.get_child(i).queue_free()
-				StoryScrollContainer.scroll_vertical = 0
+			clear()
 		
 		var text = story.continue()
 	
@@ -91,11 +89,6 @@ func continue_story():
 		label.text = text
 		
 		StoryVBoxContainer.add_child(label)
-		
-		
-		#Color change method, not needed.
-		#if story.current_tags.has("GREEN"): 
-		#	label.add_color_override("font_color", Color.green)
 		
 		if !story.current_tags.empty():
 			print(story.current_tags)
@@ -115,6 +108,25 @@ func continue_story():
 #			print("Took the tea.")
 #		else:
 #			print("Didn't take the tea.")
+
+var saved_story
+func save_story_state() -> void:
+	#Needs to save all the child labels in order to restore them later
+	saved_story = story.state.to_json()
+
+func load_story_state() -> void:
+	if saved_story != null:
+		clear()
+		story.state.load_json(saved_story)
+		$VSplitContainer.remove_child(_current_choice_container)
+		_current_choice_container.queue_free()
+		continue_story()
+
+func clear() -> void:
+	for i in range(0, StoryVBoxContainer.get_child_count()):
+		StoryVBoxContainer.get_child(i).queue_free()
+		StoryScrollContainer.scroll_vertical = 0
+
 
 
 
@@ -171,3 +183,11 @@ func _add_runtime():
 
 func _remove_runtime():
 	InkRuntime.deinit(get_tree().root)
+
+
+func _on_SaveLoader_input_save():
+	save_story_state()
+
+
+func _on_SaveLoader_input_load():
+	load_story_state()
